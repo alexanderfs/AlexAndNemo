@@ -28,6 +28,7 @@ public class MainActivity extends Activity {
         funcListL = new ArrayList<String>();
         funcListL.add("load more list");
         funcListL.add("calendar");
+        funcListL.add("ViewTreeObserver");
         ArrayAdapter<String> aad = new ArrayAdapter<String>(this, 
                 android.R.layout.simple_list_item_1, 
                 android.R.id.text1, funcListL);
@@ -48,6 +49,10 @@ public class MainActivity extends Activity {
                     startActivity(i);
                 }
                 break;
+                case 2: {
+                    Intent i = new Intent(MainActivity.this, ViewTreeObserverA.class);
+                    startActivity(i);
+                }
                 }
             }
         });
