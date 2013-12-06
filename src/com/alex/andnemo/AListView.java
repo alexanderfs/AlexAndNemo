@@ -66,9 +66,11 @@ public class AListView extends ListView {
     public void computeScroll() {
         // TODO Auto-generated method stub
         if(mScroller.computeScrollOffset()) {
-            LinearLayout.LayoutParams lp = 
+            
+           /* LinearLayout.LayoutParams lp = 
                     new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, -mScroller.getCurrY());
-            mavh.setLayoutParams(lp);
+            mavh.setLayoutParams(lp);*/
+            mavh.setHeaderHeight(-mScroller.getCurrY());
         }
        /* System.out.println(mScroller.getCurrY());
         RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(LayoutParams.MATCH_PARENT, -mScroller.getCurrY());

@@ -38,4 +38,10 @@ public class AListViewHeader extends LinearLayout {
         return mView;
     }
     
+    public void setHeaderHeight(int height) {
+        LinearLayout.LayoutParams lp = (LayoutParams) mView.getLayoutParams();
+        lp.height = height;
+        mView.setLayoutParams(lp);
+    }
+    
 }
